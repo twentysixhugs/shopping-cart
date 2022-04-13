@@ -1,81 +1,51 @@
 export interface CategoryData {
-  locationName: number;
+  id: number;
+  locationName?: string;
   name: string;
   children?: CategoryData[];
 }
 
 export const categories: CategoryData[] = [
   {
-    locationName: 1,
-    name: 'Electronics',
+    id: 1,
+    name: 'Computer Electronics',
     children: [
       {
-        locationName: 3,
-        name: 'Accessories',
+        id: 3,
+        name: 'Hardware',
         children: [
           {
-            locationName: 8,
-            name: 'Audio Accessories',
+            id: 8,
+            name: 'Motherboards',
+            locationName: 'motherboards',
           },
           {
-            locationName: 9,
-            name: 'Camera Accessories',
+            id: 9,
+            name: 'CPU',
+            locationName: 'cpu',
           },
           {
-            locationName: 10,
-            name: 'Cell Phone Accessories',
+            id: 10,
+            name: 'Videocards',
+            locationName: 'videocards',
           },
         ],
       },
       {
-        locationName: 4,
-        name: 'Computers',
+        id: 4,
+        name: 'Devices',
         children: [
           {
-            locationName: 11,
-            name: 'Personal Computers',
-            children: [
-              {
-                locationName: 14,
-                name: 'Mac',
-              },
-              {
-                locationName: 15,
-                name: 'Linux',
-              },
-              {
-                locationName: 16,
-                name: 'Windows',
-              },
-            ],
-          },
-          {
-            locationName: 12,
-            name: 'Tablets',
-          },
-          {
-            locationName: 13,
+            id: 11,
             name: 'Monitors',
+            locationName: 'monitors',
+          },
+          {
+            id: 12,
+            name: 'Keyboards',
+            locationName: 'keyboards',
           },
         ],
-      },
-    ],
-  },
-  {
-    locationName: 2,
-    name: 'Fashion',
-    children: [
-      {
-        locationName: 5,
-        name: 'Clothing',
-      },
-      {
-        locationName: 6,
-        name: 'Shoes',
-      },
-      {
-        locationName: 7,
-        name: 'Jewelry',
       },
     ],
   },
