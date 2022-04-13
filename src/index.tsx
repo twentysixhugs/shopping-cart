@@ -9,6 +9,7 @@ import Products from './components/Products/Products';
 import Contact from './components/Contact/Contact';
 import Cart from './components/Cart/Cart';
 import NoMatch from './components/NoMatch/NoMatch';
+import CurrentCategoryDisplay from './components/Products/CurrentCategoryDisplay';
 
 const root = ReactDOMClient.createRoot(document.querySelector('#root'));
 root.render(
@@ -16,7 +17,12 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products" element={<Products />}>
+          <Route
+            path=":categoryName"
+            element={<CurrentCategoryDisplay />}
+          ></Route>
+        </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NoMatch />} />
