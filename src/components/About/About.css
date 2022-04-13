@@ -1,0 +1,53 @@
+.c-about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.c-about__title {
+  font-size: 5rem;
+}
+
+.c-about__info {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.c-about__link {
+  display: block;
+  margin-top: 1rem;
+
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(0, 78, 97);
+}
+
+.c-social-networks {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  border-bottom: 2px solid black;
+}
+
+.c-social-network-link {
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.c-social-network-link__img {
+  width: 90px;
+  height: 90px;
+}
+
+.c-social-network-link__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
