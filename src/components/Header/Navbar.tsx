@@ -9,8 +9,8 @@ export default function Navbar() {
       <NavLink className="c-nav__link" to="/products">
         Products
       </NavLink>
-      <NavLink className="c-nav__link" to="/contact">
-        Contact
+      <NavLink className="c-nav__link" to="/about">
+        About
       </NavLink>
       <NavLink className="c-nav__link c-nav__link--cart" to="/cart">
         [Cart]

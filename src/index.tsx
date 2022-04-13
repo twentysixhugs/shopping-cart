@@ -6,7 +6,7 @@ import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Products from './components/Products/Products';
-import Contact from './components/Contact/Contact';
+import About from './components/Contact/About';
 import Cart from './components/Cart/Cart';
 import NoMatch from './components/NoMatch/NoMatch';
 import CurrentCategoryDisplay from './components/Products/CurrentCategoryDisplay';
@@ -23,7 +23,7 @@ root.render(
             element={<CurrentCategoryDisplay />}
           ></Route>
         </Route>
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
