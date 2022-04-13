@@ -8,7 +8,7 @@ export default function Categories() {
       /* If there are children and we are not as deep as possible, 
       map them with this same function */
       return (
-        <Category key={category.locationName} name={category.name}>
+        <Category key={category.id} name={category.name}>
           <ul className="c-category__ul">
             {category.children.map(getCategoryNodes)}
           </ul>
@@ -19,7 +19,7 @@ export default function Categories() {
       just return plain <li> with name */
       return (
         <Category
-          key={category.locationName}
+          key={category.id}
           locationName={category.locationName}
           name={category.name}
         />
