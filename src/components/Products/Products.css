@@ -1,0 +1,60 @@
+.c-categories {
+  position: fixed;
+  top: 80px;
+
+  height: calc(100vh - 80px);
+  min-width: 400px;
+  max-width: 400px;
+  padding: 1rem;
+
+  background: rgb(250, 250, 250);
+  overflow-y: hidden;
+}
+
+.c-categories:hover {
+  overflow-y: auto;
+}
+
+.c-categories__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.c-category__ul {
+  padding: 0;
+  padding-left: 40px;
+  list-style: none;
+}
+
+.c-category {
+  margin-block: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.c-category__toggle {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  padding: 0;
+  line-height: 1;
+
+  border-radius: 100%;
+  background: inherit;
+  box-shadow: 2px 2px 4px #b1b1b1;
+  cursor: pointer;
+}
+
+.c-category__link {
+  color: #000;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.c-category__link--is-active {
+  font-weight: bold;
+}
+
+.c-current-category-display {
+  margin-left: 400px;
+}
