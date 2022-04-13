@@ -40,7 +40,7 @@
   line-height: 1;
 
   border-radius: 100%;
-  background: inherit;
+  background: #fff;
   box-shadow: 2px 2px 4px #b1b1b1;
   cursor: pointer;
 }
