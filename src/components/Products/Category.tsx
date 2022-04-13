@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 interface CategoryProps {
-  locationName?: number;
+  locationName?: string;
   children?: React.ReactNode;
   name: string;
 }
