@@ -1,4 +1,5 @@
 import SocialNetworks from './SocialNetworks';
+import './About.css';
 
 export default function About() {
   return (

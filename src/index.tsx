@@ -6,7 +6,7 @@ import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Products from './components/Products/Products';
-import About from './components/Contact/About';
+import About from './components/About/About';
 import Cart from './components/Cart/Cart';
 import NoMatch from './components/NoMatch/NoMatch';
 import CurrentCategoryDisplay from './components/Products/CurrentCategoryDisplay';
