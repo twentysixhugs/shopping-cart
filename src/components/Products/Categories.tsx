@@ -8,12 +8,10 @@ export default function Categories() {
       /* If there are children and we are not as deep as possible, 
       map them with this same function */
       return (
-        <Category
-          key={category.locationName}
-          locationName={category.locationName}
-          name={category.name}
-        >
-          <ul>{category.children.map(getCategoryNodes)}</ul>
+        <Category key={category.locationName} name={category.name}>
+          <ul className="c-category__ul">
+            {category.children.map(getCategoryNodes)}
+          </ul>
         </Category>
       );
     } else {
