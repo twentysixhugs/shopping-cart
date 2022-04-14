@@ -1,5 +1,6 @@
 .c-about {
   width: 100%;
+  height: calc(100vh - var(--header-height));
   display: flex;
   justify-content: center;
   align-items: center;

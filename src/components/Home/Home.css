@@ -1,5 +1,5 @@
 .c-home {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - var(--header-height));
   padding: 5rem;
   display: flex;
   width: 60vw;
