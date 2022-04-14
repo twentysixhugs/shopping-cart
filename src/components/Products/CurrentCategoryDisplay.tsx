@@ -1,28 +1,33 @@
 import { useEffect } from 'react';
 import { Outlet, Navigate, useParams } from 'react-router-dom';
-import { getCategoryProducts } from '../../products-data/categories';
+import { getCategory } from '../../products-data/categories';
 import CategoryProduct from './CategoryProduct';
 
 export default function CurrentCategoryDisplay() {
   const params = useParams();
-  const products = getCategoryProducts(params.categoryName || '');
+  const category = getCategory(params.categoryName || '');
 
-  if (products) {
+  if (category && category.products) {
+    const products = category.products;
+
     return (
       <div className="c-current-category-display">
         <h1 className="c-current-category-display__title">
-          {params.categoryName}
+          {category.name}
         </h1>
-        {products.map((product) => {
-          return (
-            <CategoryProduct
-              name={product.name}
-              img={product.img}
-              price={product.price}
-              key={product.id}
-            />
-          );
-        })}
+        <div className="c-current-category-display__products">
+          {products.map((product) => {
+            return (
+              <CategoryProduct
+                name={product.name}
+                img={product.img}
+                price={product.price}
+                key={product.id}
+                location={`${product.id}`}
+              />
+            );
+          })}
+        </div>
       </div>
     );
   } else {

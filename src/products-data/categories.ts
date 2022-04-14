@@ -27,10 +27,8 @@ export interface Product {
   img: string;
 }
 
-export function getCategoryProducts(
-  locationName: string,
-): Product[] | null {
-  return getObject(categories, locationName)?.products;
+export function getCategory(locationName: string): CategoryData | null {
+  return getObject(categories, locationName);
 }
 
 function getObject(theObject: any, locationName: string): any {
@@ -96,13 +94,13 @@ export const categories: CategoryData[] = [
             locationName: 'cpu',
             products: [
               {
-                id: 1,
+                id: 3,
                 name: 'Intel Core i7-10700KF LGA1200',
                 price: '428$',
                 img: i7,
               },
               {
-                id: 2,
+                id: 4,
                 name: 'AMD Ryzen 9 5950X AM4',
                 price: '384$',
                 img: ryzen9,
@@ -115,19 +113,19 @@ export const categories: CategoryData[] = [
             locationName: 'videocards',
             products: [
               {
-                id: 1,
+                id: 5,
                 name: 'MSI GeForce RTX 3060 GAMING X 12G',
                 price: '1020$',
                 img: msiCard,
               },
               {
-                id: 2,
+                id: 6,
                 name: 'GIGABYTE Radeon RX 6700 XT GAMING OC 12G',
                 price: '912$',
                 img: gigabyteCard,
               },
               {
-                id: 3,
+                id: 7,
                 name: 'ASUS DUAL GeForce GTX 1650 MINI OC 4GB',
                 price: '576$',
                 img: asusCard,
@@ -146,25 +144,25 @@ export const categories: CategoryData[] = [
             locationName: 'monitors',
             products: [
               {
-                id: 1,
+                id: 8,
                 name: '34" Xiaomi Mi Curved Gaming, 3440x1440, 144 Hz, VA',
                 price: '402$',
                 img: xiaomiMonitor,
               },
               {
-                id: 2,
+                id: 9,
                 name: '23.6" HP X24c, 1920x1080, 144 Hz, VA',
                 price: '274$',
                 img: hpMonitor,
               },
               {
-                id: 3,
+                id: 10,
                 name: '23.8" MSI Optix G241, 1920x1080, 144 Hz, IPS',
                 price: '370$',
                 img: msiMonitor,
               },
               {
-                id: 4,
+                id: 11,
                 name: '23.8" HUAWEI Display, 1920x1080, 60 Hz, IPS',
                 price: '250$',
                 img: huaweiMonitor,
@@ -177,13 +175,13 @@ export const categories: CategoryData[] = [
             locationName: 'keyboards',
             products: [
               {
-                id: 1,
+                id: 12,
                 name: 'Logitech K380 Multi-Device Pink',
                 price: '42$',
                 img: logitechKeyboard,
               },
               {
-                id: 2,
+                id: 13,
                 name: 'Red Square Keyrox TKL White',
                 price: '37$',
                 img: redsquareKeyboard,
