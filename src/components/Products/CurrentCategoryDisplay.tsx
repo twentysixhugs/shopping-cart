@@ -12,17 +12,17 @@ export default function CurrentCategoryDisplay() {
       <div className="c-current-category-display">
         <h1 className="c-current-category-display__title">
           {params.categoryName}
-          {products.map((product) => {
-            return (
-              <CategoryProduct
-                name={product.name}
-                img={product.img}
-                price={product.price}
-                key={product.id}
-              />
-            );
-          })}
         </h1>
+        {products.map((product) => {
+          return (
+            <CategoryProduct
+              name={product.name}
+              img={product.img}
+              price={product.price}
+              key={product.id}
+            />
+          );
+        })}
       </div>
     );
   } else {
