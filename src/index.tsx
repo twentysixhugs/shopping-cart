@@ -10,6 +10,7 @@ import About from './components/About/About';
 import Cart from './components/Cart/Cart';
 import NoMatch from './components/NoMatch/NoMatch';
 import CurrentCategoryDisplay from './components/Products/CurrentCategoryDisplay';
+import CurrentProduct from './components/Products/CurrentProduct';
 
 const root = ReactDOMClient.createRoot(document.querySelector('#root'));
 root.render(
@@ -21,10 +22,15 @@ root.render(
           <Route
             path=":categoryName"
             element={<CurrentCategoryDisplay />}
-          ></Route>
+          />
+          <Route
+            path=":categoryName/:productId"
+            element={<CurrentProduct />}
+          />
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/not-found" element={<NoMatch />} />
         <Route path="*" element={<NoMatch />} />
       </Route>
     </Routes>
