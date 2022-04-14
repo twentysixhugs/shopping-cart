@@ -1,18 +1,11 @@
 import { useEffect } from 'react';
-import { Outlet, useParams, useNavigate } from 'react-router-dom';
+import { Outlet, Navigate, useParams } from 'react-router-dom';
 import { getCategoryProducts } from '../../products-data/categories';
 import CategoryProduct from './CategoryProduct';
 
 export default function CurrentCategoryDisplay() {
   const params = useParams();
-  const navigate = useNavigate();
   const products = getCategoryProducts(params.categoryName || '');
-
-  useEffect(() => {
-    if (!products) {
-      navigate('/*');
-    }
-  }, []);
 
   if (products) {
     return (
@@ -33,6 +26,6 @@ export default function CurrentCategoryDisplay() {
       </div>
     );
   } else {
-    return null;
+    return <Navigate replace to="/not-found"></Navigate>;
   }
 }
