@@ -15,7 +15,7 @@ export default function Navbar() {
         className={({ isActive }) =>
           isActive ? 'c-nav__link c-nav__link--is-active' : 'c-nav__link'
         }
-        to="/products"
+        to="/products/motherboards"
       >
         Products
       </NavLink>
