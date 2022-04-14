@@ -27,7 +27,7 @@ export interface Product {
   img: string;
 }
 
-export function getCategory(locationName: string): CategoryData | null {
+export function getCategory(locationName: string): CategoryData {
   return getObject(categories, locationName);
 }
 
