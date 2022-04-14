@@ -1,0 +1,41 @@
+.c-not-found {
+  width: 100%;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+}
+
+.c-not-found__wrapper {
+  width: max(390px, 30vw);
+  height: 30vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.c-not-found__btn {
+  width: 170px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  text-decoration: none;
+  line-height: 0.2;
+
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
