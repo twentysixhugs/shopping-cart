@@ -26,7 +26,7 @@ export default function CurrentProduct() {
       <img className="c-current-product__img" src={product.img}></img>
       <div className="c-current-product__main-wrapper">
         <h3 className="c-current-product__name">{product.name}</h3>
-        <span className="c-current-product__price">$ {product.price}</span>
+        <span className="c-current-product__price">{product.price}</span>
         <div className="c-current-product__ui-wrapper">
           <Quantity quantity={quantity} />
           <button className="c-current-product__add-to-cart">
