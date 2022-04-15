@@ -1,6 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom';
 import React, { useState } from 'react';
-import { getCategory, Product } from '../../products-data/categories';
+import { getCategory } from '../../products-data/categories';
 import Quantity from './Quantity';
 import { CartItem } from '../Cart/Cart';
 
@@ -19,13 +19,9 @@ export default function CurrentProduct({
   const params = useParams();
 
   const handleQuantityChange = function (action: 'increase' | 'decrease') {
-    if (action === 'decrease') {
-      if (quantity === 1) {
-        return;
-      } else {
-        setQuantity((q) => q - 1);
-      }
-    } else if (action === 'increase') {
+    if (action === 'decrease' && quantity !== 1) {
+      setQuantity((q) => q - 1);
+    } else if (action === 'increase' && quantity < 100) {
       setQuantity((q) => q + 1);
     }
   };
@@ -51,12 +47,8 @@ export default function CurrentProduct({
         <span className="c-current-product__price">{product.price}</span>
         <div className="c-current-product__ui-wrapper">
           <Quantity
-            onIncrease={(e: React.MouseEvent) =>
-              handleQuantityChange('increase')
-            }
-            onDecrease={(e: React.MouseEvent) =>
-              handleQuantityChange('decrease')
-            }
+            onIncrease={() => handleQuantityChange('increase')}
+            onDecrease={() => handleQuantityChange('decrease')}
             quantity={quantity}
           />
           <button
