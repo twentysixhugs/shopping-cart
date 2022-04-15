@@ -79,9 +79,8 @@
 
   text-align: center;
 
-  border: 1px solid rgb(245, 245, 245);
-  background: rgb(251, 251, 251);
   border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.12);
 
   cursor: pointer;
 }
@@ -112,13 +111,16 @@
   padding: 2rem;
   display: flex;
   align-items: start;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .c-current-product__main-wrapper {
-  height: 300px;
+  /* height: 300px; */
+  padding-block: 1.25rem;
   display: flex;
   flex-flow: column;
+
+  border-bottom: 1px solid lightgray;
 }
 
 .c-current-product__name {
