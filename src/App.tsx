@@ -16,14 +16,17 @@ function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
 
   const handleAddToCart = useCallback(
-    (id: number, quantity: number) => {
-      return function (e: React.MouseEvent) {
-        console.log(id, quantity);
-        setCart([...cart, { id, quantity }]);
+    ({ id, name, price, img, quantity }: CartItem) => {
+      return function () {
+        setCart([...cart, { id, name, price, img, quantity }]);
       };
     },
     [cart],
   );
+
+  useEffect(() => {
+    console.log(cart);
+  }, [cart]);
 
   return (
     <div className="App">
@@ -44,7 +47,7 @@ function App() {
             />
           </Route>
           <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart cart={cart} />} />
           <Route path="/not-found" element={<NoMatch />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>

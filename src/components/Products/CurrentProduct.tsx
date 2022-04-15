@@ -6,10 +6,7 @@ import { CartItem } from '../Cart/Cart';
 import { Product } from '../../products-data/categories';
 
 interface CurrentProductProps {
-  onCartAdd: (
-    id: number,
-    quantity: number,
-  ) => (e: React.MouseEvent) => void;
+  onCartAdd: (arg0: CartItem) => (e: React.MouseEvent) => void;
   cart: CartItem[];
 }
 
@@ -58,7 +55,7 @@ export default function CurrentProduct({
             />
             <button
               className="c-current-product__add-to-cart"
-              onClick={onCartAdd(product.id, quantity)}
+              onClick={onCartAdd({ ...product, quantity })}
             >
               Add to cart
             </button>
