@@ -42,7 +42,6 @@ function getObject(theObject: any, locationName: string): any {
     }
   } else {
     for (const prop in theObject) {
-      console.log(prop + ': ' + theObject[prop]);
       if (prop === 'products') {
         if (theObject.locationName === locationName) return theObject;
       }
@@ -77,13 +76,13 @@ export const categories: CategoryData[] = [
               {
                 id: 1,
                 name: 'ASUS PRIME H510M-K',
-                price: '112$',
+                price: '$112',
                 img: asusMotherboard,
               },
               {
                 id: 2,
                 name: 'ASRock B560 PRO4',
-                price: '214$',
+                price: '$214',
                 img: asrockMotherboard,
               },
             ],
@@ -96,13 +95,13 @@ export const categories: CategoryData[] = [
               {
                 id: 3,
                 name: 'Intel Core i7-10700KF LGA1200',
-                price: '428$',
+                price: '$428',
                 img: i7,
               },
               {
                 id: 4,
                 name: 'AMD Ryzen 9 5950X AM4',
-                price: '384$',
+                price: '$384',
                 img: ryzen9,
               },
             ],
@@ -115,19 +114,19 @@ export const categories: CategoryData[] = [
               {
                 id: 5,
                 name: 'MSI GeForce RTX 3060 GAMING X 12G',
-                price: '1020$',
+                price: '$1020',
                 img: msiCard,
               },
               {
                 id: 6,
                 name: 'GIGABYTE Radeon RX 6700 XT GAMING OC 12G',
-                price: '912$',
+                price: '$912',
                 img: gigabyteCard,
               },
               {
                 id: 7,
                 name: 'ASUS DUAL GeForce GTX 1650 MINI OC 4GB',
-                price: '576$',
+                price: '$576',
                 img: asusCard,
               },
             ],
@@ -146,25 +145,25 @@ export const categories: CategoryData[] = [
               {
                 id: 8,
                 name: '34" Xiaomi Mi Curved Gaming, 3440x1440, 144 Hz, VA',
-                price: '402$',
+                price: '$402',
                 img: xiaomiMonitor,
               },
               {
                 id: 9,
                 name: '23.6" HP X24c, 1920x1080, 144 Hz, VA',
-                price: '274$',
+                price: '$274',
                 img: hpMonitor,
               },
               {
                 id: 10,
                 name: '23.8" MSI Optix G241, 1920x1080, 144 Hz, IPS',
-                price: '370$',
+                price: '$370',
                 img: msiMonitor,
               },
               {
                 id: 11,
                 name: '23.8" HUAWEI Display, 1920x1080, 60 Hz, IPS',
-                price: '250$',
+                price: '$250',
                 img: huaweiMonitor,
               },
             ],
@@ -177,13 +176,13 @@ export const categories: CategoryData[] = [
               {
                 id: 12,
                 name: 'Logitech K380 Multi-Device Pink',
-                price: '42$',
+                price: '$42',
                 img: logitechKeyboard,
               },
               {
                 id: 13,
                 name: 'Red Square Keyrox TKL White',
-                price: '37$',
+                price: '$37',
                 img: redsquareKeyboard,
               },
             ],
