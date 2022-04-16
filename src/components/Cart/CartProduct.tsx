@@ -18,7 +18,9 @@ export default function CartProduct({
       <img className="c-cart-product__img" src={img}></img>
       <h5 className="c-cart-product__name">{name}</h5>
       <h6 className="c-cart-product__price">{price}</h6>
-      <span className="c-cart-product__quantity">{quantity}</span>
+      <span className="c-cart-product__quantity">
+        Quantity: {quantity}
+      </span>
       <button className="c-cart-product__remove" onClick={onRemove}>
         {'\u00d7'}
       </button>
