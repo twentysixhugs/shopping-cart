@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/shopping-cart">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
