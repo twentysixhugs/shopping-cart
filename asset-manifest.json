@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.d6914a80.css",
+    "main.js": "/shopping-cart/static/js/main.68396b60.js",
+    "static/media/asus_motherboard.webp": "/shopping-cart/static/media/asus_motherboard.3cff69eb05d558e25292.webp",
+    "static/media/huawei_monitor.webp": "/shopping-cart/static/media/huawei_monitor.00c3e1b44b1581cada97.webp",
+    "static/media/msi_card.webp": "/shopping-cart/static/media/msi_card.d5a8dcbb90c426d558ca.webp",
+    "static/media/asrock_motherboard.webp": "/shopping-cart/static/media/asrock_motherboard.83a65255451b79146e87.webp",
+    "static/media/ryzen9.webp": "/shopping-cart/static/media/ryzen9.8c9140052842c68c0544.webp",
+    "static/media/asus_card.webp": "/shopping-cart/static/media/asus_card.b11430eabdbbf699a1c6.webp",
+    "static/media/hp_monitor.webp": "/shopping-cart/static/media/hp_monitor.44259c9f671c9dd156a8.webp",
+    "static/media/xiaomi_monitor.webp": "/shopping-cart/static/media/xiaomi_monitor.6ea1b53579c47ec66018.webp",
+    "static/media/msi_monitor.webp": "/shopping-cart/static/media/msi_monitor.06e53766323b2057675d.webp",
+    "static/media/i7.webp": "/shopping-cart/static/media/i7.423e7750df6eecdce41f.webp",
+    "static/media/gigabyte_card.webp": "/shopping-cart/static/media/gigabyte_card.5f1617bc19dc583b8567.webp",
+    "static/media/redsquare_keyboard.webp": "/shopping-cart/static/media/redsquare_keyboard.d37cb55ce222fab667db.webp",
+    "static/media/logitech_keyboard.webp": "/shopping-cart/static/media/logitech_keyboard.cff38d8572f11e08a351.webp",
+    "index.html": "/shopping-cart/index.html",
+    "main.d6914a80.css.map": "/shopping-cart/static/css/main.d6914a80.css.map",
+    "main.68396b60.js.map": "/shopping-cart/static/js/main.68396b60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6914a80.css",
+    "static/js/main.68396b60.js"
+  ]
+}
