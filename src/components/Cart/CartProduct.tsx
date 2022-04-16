@@ -2,7 +2,8 @@ interface CartProductProps {
   name: string;
   price: string;
   img: string;
-  quantity: string | number;
+  quantity: number;
+  onRemove: React.MouseEventHandler;
 }
 
 export default function CartProduct({
@@ -10,6 +11,7 @@ export default function CartProduct({
   price,
   img,
   quantity,
+  onRemove,
 }: CartProductProps) {
   return (
     <div className="c-cart-product">
@@ -17,6 +19,9 @@ export default function CartProduct({
       <h5 className="c-cart-product__name">{name}</h5>
       <h6 className="c-cart-product__price">{price}</h6>
       <span className="c-cart-product__quantity">{quantity}</span>
+      <button className="c-cart-product__remove" onClick={onRemove}>
+        {'\u00d7'}
+      </button>
     </div>
   );
 }

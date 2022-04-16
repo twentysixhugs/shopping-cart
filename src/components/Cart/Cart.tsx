@@ -8,9 +8,10 @@ export interface CartItem extends Product {
 
 interface CartProps {
   cart: CartItem[];
+  onItemRemove: (id: number) => void;
 }
 
-export default function Cart({ cart }: CartProps) {
+export default function Cart({ cart, onItemRemove }: CartProps) {
   return (
     <div className="c-cart">
       {cart.map((cartItem) => {
@@ -21,9 +22,11 @@ export default function Cart({ cart }: CartProps) {
             img={cartItem.img}
             key={cartItem.id}
             quantity={cartItem.quantity}
+            onRemove={() => onItemRemove(cartItem.id)}
           />
         );
       })}
+      <button className="c-cart__check-out">Check out</button>
     </div>
   );
 }

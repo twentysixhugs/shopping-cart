@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import Home from './components/Home/Home';
 import Products from './components/Products/Products';
 import About from './components/About/About';
@@ -9,8 +9,6 @@ import Cart, { CartItem } from './components/Cart/Cart';
 import NoMatch from './components/NoMatch/NoMatch';
 import CurrentCategoryDisplay from './components/Products/CurrentCategoryDisplay';
 import CurrentProduct from './components/Products/CurrentProduct';
-
-import { getCategory, Product } from './products-data/categories';
 
 function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -24,9 +22,9 @@ function App() {
     [cart],
   );
 
-  useEffect(() => {
-    console.log(cart);
-  }, [cart]);
+  function handleItemRemove(id: number) {
+    setCart((cart) => cart.filter((cartItem) => cartItem.id !== id));
+  }
 
   return (
     <div className="App">
@@ -47,7 +45,10 @@ function App() {
             />
           </Route>
           <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<Cart cart={cart} />} />
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} onItemRemove={handleItemRemove} />}
+          />
           <Route path="/not-found" element={<NoMatch />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
