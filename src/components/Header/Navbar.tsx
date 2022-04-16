@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import cartSVG from './cart.svg';
 
 export default function Navbar() {
   return (
@@ -29,11 +30,13 @@ export default function Navbar() {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          isActive ? 'c-nav__link c-nav__link--is-active' : 'c-nav__link'
+          isActive
+            ? 'c-nav__link c-nav__link--cart c-nav__link--is-active'
+            : 'c-nav__link c-nav__link--cart'
         }
         to="/cart"
       >
-        [Cart]
+        <img className="c-nav__cart" src={cartSVG}></img>
       </NavLink>
     </nav>
   );

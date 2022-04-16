@@ -37,6 +37,7 @@
 
 .c-nav {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -52,4 +53,9 @@
 
 .c-nav__link--cart {
   margin-left: 1rem;
+}
+
+.c-nav__cart {
+  width: 1.5rem;
+  filter: invert(1);
 }
