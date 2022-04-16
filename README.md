@@ -1,5 +1,7 @@
 # Shopping cart
 
+## [Live Preview](https://twentysixhugs.github.io/shopping-cart/)
+
 ## Description
 
 - In this app, you can browse the shop and add items to your cart.
