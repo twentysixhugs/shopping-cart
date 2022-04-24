@@ -31,5 +31,6 @@ body,
 @media (max-width: 600px) {
   .App {
     align-items: center;
+    --header-height: 60px;
   }
 }
