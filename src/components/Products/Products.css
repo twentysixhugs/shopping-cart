@@ -188,6 +188,17 @@
   height: 100%;
 }
 
+@media (max-width: 500px) {
+  .c-current-category-display__products {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.7rem;
+  }
+
+  .c-category-product__name {
+    font-size: 1.2rem;
+  }
+}
+
 .c-current-product {
   height: calc(100vh - var(--header-height));
   margin-left: var(--categories-width);
