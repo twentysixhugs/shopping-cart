@@ -55,7 +55,7 @@
 }
 
 .c-cart-product__img {
-  width: 200px;
+  max-width: 200px;
 }
 
 .c-cart-product__remove {
@@ -87,4 +87,18 @@
 
 .c-cart__total {
   font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  .c-cart > * {
+    margin-inline: 0;
+  }
+
+  .c-cart__product {
+    padding: 1rem;
+  }
+
+  .c-cart-product__img {
+    max-width: 160px;
+  }
 }
