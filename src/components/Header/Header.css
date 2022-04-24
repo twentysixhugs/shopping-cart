@@ -59,3 +59,22 @@
   width: 1.5rem;
   filter: invert(1);
 }
+
+@media (max-width: 600px) {
+  .c-header {
+    padding: 5px 5px;
+    height: calc(var(--header-height) - 20px);
+  }
+
+  .c-header-logo__text {
+    display: none;
+  }
+
+  .c-nav {
+    gap: 8px;
+  }
+
+  .c-nav__link {
+    font-size: 1rem;
+  }
+}
