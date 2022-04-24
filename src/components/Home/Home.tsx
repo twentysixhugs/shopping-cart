@@ -12,7 +12,7 @@ export default function Home() {
         doloremque dicta optio perspiciatis enim! Lorem ipsum dolor sit,
         amet consectetur adipisicing elit.
       </p>
-      <Link className="c-home__link" to="/products">
+      <Link className="c-home__link" to="/products/motherboards">
         Shop now
       </Link>
     </div>
