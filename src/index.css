@@ -27,3 +27,9 @@ body,
   display: flex;
   flex-flow: column;
 }
+
+@media (max-width: 600px) {
+  .App {
+    align-items: center;
+  }
+}
