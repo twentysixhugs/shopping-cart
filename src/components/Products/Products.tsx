@@ -35,7 +35,9 @@ export default function Products() {
       <Categories
         onToggle={toggleCategoriesOnDemand}
         isShown={areCategoriesShownMedia || areCategoriesShownDemand}
-        shouldShowCloseButton={areCategoriesShownDemand}
+        shouldShowCloseButton={
+          areCategoriesShownDemand && !areCategoriesShownMedia
+        }
       />
       <Outlet />
     </div>
