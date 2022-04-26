@@ -3,9 +3,10 @@
 ## [Live Preview](https://twentysixhugs.github.io/shopping-cart/)
 
 ## Description
-
-- In this app, you can browse the shop and add items to your cart.
-- I created it to practice React Router and some tricks with React and recursion I learned.
+**An app that imitates an online hardware shop**
+- Users can browse through the catalog, open individual items and filter them by categories.
+- User interface was built with React and Typescript
+- Routing was built with React Router
 
 ### Credits
 
