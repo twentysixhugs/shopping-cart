@@ -12,7 +12,7 @@
   color: white;
   font-size: 2rem;
 
-  background: black;
+  background: rgb(10, 10, 10);
 }
 
 .c-header-logo {
@@ -45,13 +45,13 @@
   font-size: 1.2rem;
   text-decoration: none;
   color: white;
-  animation: activeNavLinkOut 0.3s ease-out both;
+  animation: activeNavLinkOut 0.3s ease-out both alternate;
   transition: transform 0.2s ease-out;
 }
 
 .c-nav__link--is-active {
   font-weight: bold;
-  animation: activeNavLinkIn 0.3s ease-out both;
+  animation: activeNavLinkIn 0.3s ease-out both alternate;
 }
 
 .c-nav__link:hover {
