@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Outlet, Navigate, useParams } from 'react-router-dom';
-import { getCategory } from '../../products-data/categories';
+import { getCategory } from '../../../products-data/categories';
 import CategoryProduct from './CategoryProduct';
 
 export default function CurrentCategoryDisplay() {

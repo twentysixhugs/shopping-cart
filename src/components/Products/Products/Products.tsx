@@ -1,7 +1,7 @@
 import { Outlet, useMatch } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import Categories from './Categories';
+import Categories from '../Categories/Categories';
 import './Products.css';
 
 export default function Products() {

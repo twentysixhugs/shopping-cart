@@ -1,4 +1,4 @@
-import CurrentProduct from '../components/Products/CurrentProduct';
+import CurrentProduct from '../components/Products/CurrentProduct/CurrentProduct';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { CartItem } from '../components/Cart/Cart';

@@ -1,6 +1,6 @@
 import React from 'react';
-import { CategoryData } from '../../products-data/categories';
-import { categories } from '../../products-data/categories';
+import { CategoryData } from '../../../products-data/categories';
+import { categories } from '../../../products-data/categories';
 import Category from './Category';
 
 export default function Categories({

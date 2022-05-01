@@ -6,6 +6,7 @@ export default function SocialNetworks() {
     <div className="c-social-networks">
       <GithubLink />
       <LinkedInLink />
+      <div className="c-social-networks__effect" />
     </div>
   );
 }

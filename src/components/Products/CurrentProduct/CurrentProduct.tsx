@@ -1,9 +1,9 @@
 import { useParams, Navigate, Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import { getCategory } from '../../products-data/categories';
+import { getCategory } from '../../../products-data/categories';
 import Quantity from './Quantity';
-import { CartItem } from '../Cart/Cart';
-import { Product } from '../../products-data/categories';
+import { CartItem } from '../../Cart/Cart';
+import { Product } from '../../../products-data/categories';
 
 interface CurrentProductProps {
   onCartAdd: (arg0: CartItem) => (e: React.MouseEvent) => void;

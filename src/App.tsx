@@ -3,12 +3,12 @@ import Header from './components/Header/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useCallback } from 'react';
 import Home from './components/Home/Home';
-import Products from './components/Products/Products';
+import Products from './components/Products/Products/Products';
 import About from './components/About/About';
 import Cart, { CartItem } from './components/Cart/Cart';
 import NoMatch from './components/NoMatch/NoMatch';
-import CurrentCategoryDisplay from './components/Products/CurrentCategoryDisplay';
-import CurrentProduct from './components/Products/CurrentProduct';
+import CurrentCategoryDisplay from './components/Products/Products/CurrentCategoryDisplay';
+import CurrentProduct from './components/Products/CurrentProduct/CurrentProduct';
 
 function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
