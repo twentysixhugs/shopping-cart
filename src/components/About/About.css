@@ -26,6 +26,7 @@
 }
 
 .c-social-networks {
+  position: relative;
   padding: 0.5rem;
   margin-top: 1rem;
   display: flex;
@@ -33,7 +34,22 @@
   align-items: center;
   gap: 2rem;
 
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
+}
+
+.c-social-networks__effect {
+  position: absolute;
+  bottom: 0;
+  width: 5px;
+  height: 2px;
+  background: #000;
+  animation: socialNetworksEffect 1.3s ease-out forwards;
+}
+
+@keyframes socialNetworksEffect {
+  to {
+    width: 100%;
+  }
 }
 
 .c-social-network-link {
