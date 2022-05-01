@@ -45,14 +45,44 @@
   font-size: 1.2rem;
   text-decoration: none;
   color: white;
+  animation: activeNavLinkOut 0.3s ease-out both;
+  transition: transform 0.2s ease-out;
 }
 
 .c-nav__link--is-active {
   font-weight: bold;
+  animation: activeNavLinkIn 0.3s ease-out both;
+}
+
+.c-nav__link:hover {
+  transform: scale(1.1);
+}
+
+@keyframes activeNavLinkIn {
+  from {
+    font-size: 1.2rem;
+  }
+  to {
+    font-size: 1.3rem;
+  }
+}
+
+@keyframes activeNavLinkOut {
+  from {
+    font-size: 1.3rem;
+  }
+  to {
+    font-size: 1.2rem;
+  }
 }
 
 .c-nav__link--cart {
   margin-left: 1rem;
+  transition: transform 0.2s ease-out;
+}
+
+.c-nav__link--cart.c-nav__link--is-active > img {
+  transform: scale(1.1);
 }
 
 .c-nav__cart {
