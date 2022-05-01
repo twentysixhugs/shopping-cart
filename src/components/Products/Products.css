@@ -57,6 +57,13 @@
 
 .c-category__link--is-active {
   font-weight: bold;
+  animation: activeLink 1s forwards;
+}
+
+@keyframes activeLink {
+  to {
+    font-size: 1.05rem;
+  }
 }
 
 /* Products */
@@ -94,6 +101,17 @@
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.12);
 
   cursor: pointer;
+
+  animation: opacity 0.4s forwards;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .c-category-product__img {
@@ -160,6 +178,11 @@
   box-shadow: 2px 2px 5px rgb(156, 156, 156);
 
   cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.c-current-product__add-to-cart:active {
+  transform: scale(1.05);
 }
 
 .c-current-product__in-cart {
