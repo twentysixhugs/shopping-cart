@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.10cd7829.css",
-    "main.js": "/shopping-cart/static/js/main.4e5f7aa5.js",
+    "main.js": "/shopping-cart/static/js/main.a10f30d4.js",
     "static/media/asus_motherboard.webp": "/shopping-cart/static/media/asus_motherboard.3cff69eb05d558e25292.webp",
     "static/media/huawei_monitor.webp": "/shopping-cart/static/media/huawei_monitor.00c3e1b44b1581cada97.webp",
     "static/media/msi_card.webp": "/shopping-cart/static/media/msi_card.d5a8dcbb90c426d558ca.webp",
@@ -18,10 +18,10 @@
     "static/media/cart.svg": "/shopping-cart/static/media/cart.9e614bda8e611995b9efda63c8cc16b2.svg",
     "index.html": "/shopping-cart/index.html",
     "main.10cd7829.css.map": "/shopping-cart/static/css/main.10cd7829.css.map",
-    "main.4e5f7aa5.js.map": "/shopping-cart/static/js/main.4e5f7aa5.js.map"
+    "main.a10f30d4.js.map": "/shopping-cart/static/js/main.a10f30d4.js.map"
   },
   "entrypoints": [
     "static/css/main.10cd7829.css",
-    "static/js/main.4e5f7aa5.js"
+    "static/js/main.a10f30d4.js"
   ]
 }
