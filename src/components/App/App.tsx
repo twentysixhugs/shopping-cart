@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../Header/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useCallback } from 'react';
