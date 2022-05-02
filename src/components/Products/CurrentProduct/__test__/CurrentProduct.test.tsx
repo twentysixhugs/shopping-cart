@@ -1,7 +1,7 @@
-import CurrentProduct from '../components/Products/CurrentProduct/CurrentProduct';
+import CurrentProduct from '../CurrentProduct';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { CartItem } from '../components/Cart/Cart';
+import { CartItem } from '../../../Cart/Cart';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 
 describe('quantity', () => {
