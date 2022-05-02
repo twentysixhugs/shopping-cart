@@ -6,7 +6,7 @@ import { MemoryRouter, Routes, Route } from 'react-router-dom';
 
 describe('quantity', () => {
   it('can increase and decrease quantity', () => {
-    const onCartAddMock = jest.fn();
+    const mockOnCartAdd = jest.fn();
     const cart: CartItem[] = [];
 
     const { container } = render(
@@ -15,7 +15,7 @@ describe('quantity', () => {
           <Route
             path="/products/:categoryName/:productId"
             element={
-              <CurrentProduct onCartAdd={onCartAddMock} cart={cart} />
+              <CurrentProduct onCartAdd={mockOnCartAdd} cart={cart} />
             }
           ></Route>
         </Routes>
@@ -46,7 +46,7 @@ describe('quantity', () => {
     ).toBe('1');
   });
   it('quantity cannot be higher than 99', () => {
-    const onCartAddMock = jest.fn();
+    const mockOnCartAdd = jest.fn();
     const cart: CartItem[] = [];
 
     const { container } = render(
@@ -55,7 +55,7 @@ describe('quantity', () => {
           <Route
             path="/products/:categoryName/:productId"
             element={
-              <CurrentProduct onCartAdd={onCartAddMock} cart={cart} />
+              <CurrentProduct onCartAdd={mockOnCartAdd} cart={cart} />
             }
           ></Route>
         </Routes>
