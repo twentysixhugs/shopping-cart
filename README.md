@@ -12,4 +12,4 @@
 
 - <a target="_blank" href="https://icons8.com/icon/62856/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 - <a target="_blank" href="https://icons8.com/icon/xuvGCOXi8Wyg/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-- <a target="_blank" href="https://www.svgrepo.com">Cart icons from www.svgrepo.com</a>
+- Cart icons from <a target="_blank" href="https://www.svgrepo.com">www.svgrepo.com</a>
