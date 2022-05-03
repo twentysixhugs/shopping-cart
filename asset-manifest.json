@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.10cd7829.css",
+    "main.css": "/shopping-cart/static/css/main.2c9eb52e.css",
     "main.js": "/shopping-cart/static/js/main.a10f30d4.js",
     "static/media/asus_motherboard.webp": "/shopping-cart/static/media/asus_motherboard.3cff69eb05d558e25292.webp",
     "static/media/huawei_monitor.webp": "/shopping-cart/static/media/huawei_monitor.00c3e1b44b1581cada97.webp",
@@ -17,11 +17,11 @@
     "static/media/logitech_keyboard.webp": "/shopping-cart/static/media/logitech_keyboard.cff38d8572f11e08a351.webp",
     "static/media/cart.svg": "/shopping-cart/static/media/cart.9e614bda8e611995b9efda63c8cc16b2.svg",
     "index.html": "/shopping-cart/index.html",
-    "main.10cd7829.css.map": "/shopping-cart/static/css/main.10cd7829.css.map",
+    "main.2c9eb52e.css.map": "/shopping-cart/static/css/main.2c9eb52e.css.map",
     "main.a10f30d4.js.map": "/shopping-cart/static/js/main.a10f30d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.10cd7829.css",
+    "static/css/main.2c9eb52e.css",
     "static/js/main.a10f30d4.js"
   ]
 }
