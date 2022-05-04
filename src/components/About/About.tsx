@@ -10,7 +10,7 @@ export default function About() {
         <p className="c-about__info">Made with love by Iaan Lamanosau</p>
         <a
           className="c-about__link"
-          href="https://twentysixhugs.github.io/shopping-cart"
+          href="https://github.com/twentysixhugs/shopping-cart"
           target="_blank"
           rel="noreferrer"
         >
